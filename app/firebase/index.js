@@ -2,11 +2,10 @@ import firebase from 'firebase';
 
 try{
   var config = {
-      apiKey: "AIzaSyB3PFja3GV_E9Flo3yntUUtOJP5ptmPZM0",
-      authDomain: "jack-todo-app.firebaseapp.com",
-      databaseURL: "https://jack-todo-app.firebaseio.com",
-      storageBucket: "jack-todo-app.appspot.com",
-      messagingSenderId: "575191822794"
+      apiKey: process.env.API_KEY,
+      authDomain: process.env.AUTH_DOMAIN,
+      databaseURL: process.env.DATABASE_URL,
+      storageBucket: process.env.STORAGE_BUCKET
     };
     firebase.initializeApp(config);
 } catch (e) {
