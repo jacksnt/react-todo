@@ -19,8 +19,6 @@ firebase.auth().onAuthStateChanged((user)=>{
   }
 });
 
-
-
 //Load foundation
 $(document).foundation();
 
